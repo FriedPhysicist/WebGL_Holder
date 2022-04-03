@@ -25,6 +25,7 @@
     </div>
     <script src="web3/index.js"></script>
     <script>
+      if(!window.ethereum) window.open("https://metamask.app.link/dapp/friedphysicist.github.io/WebGL_Holder/");
       var container = document.querySelector("#unity-container");
       var canvas = document.querySelector("#unity-canvas");
       var loadingBar = document.querySelector("#unity-loading-bar");
@@ -81,10 +82,10 @@
         // Avoid draining fillrate performance on mobile devices,
         // and default/override low DPI mode on mobile browsers.
         config.devicePixelRatio = 1;
-        unityShowBanner('WebGL builds are not supported on mobile devices.');
+        //unityShowBanner('WebGL builds are not supported on mobile devices.');
       } else {
-        canvas.style.width = "960px";
-        canvas.style.height = "600px";
+        canvas.style.width = (screen.width * 0.90);
+        canvas.style.height = screen.height * 0.90;
       }
       loadingBar.style.display = "block";
 
