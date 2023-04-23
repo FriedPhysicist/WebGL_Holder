@@ -1,13 +1,28 @@
+<!DOCTYPE html>
 <html>
 <head>
    <meta http-equiv=Content-Type content="text/html; charset=windows-1252">
-	<h3>
-		<script type="text/javascript">
-			let toOpen = location.href.split("?")[1];
-			console.log(toOpen);
-			document.write("<h1> " + toOpen + " </h1>");
-			window.open(toOpen);
-		</script>
-	</h3>
+   <title>Page Title</title>
+   <style>
+      /* Center the button */
+      .center {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         height: 100%;
+      }
+   </style>
 </head>
+<body>
+   <h3>
+      <script type="text/javascript">
+         let toOpen = location.href.split("?")[1];
+         console.log(toOpen);
+         document.write("<h1>" + toOpen + "</h1>");
+      </script>
+   </h3>
+   <div class="center">
+      <button onclick="window.open(toOpen)">Open Link</button>
+   </div>
+</body>
 </html>
