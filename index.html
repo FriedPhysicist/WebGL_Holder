@@ -1,1 +1,100 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"/><link rel="icon" href="/favicon.ico"/><meta name="viewport" content="width=device-width,initial-scale=1"/><meta name="theme-color" content="#000000"/><meta name="description" content="Web site created using create-react-app"/><link rel="apple-touch-icon" href="/logo192.png"/><link rel="manifest" href="your-path/site.webmanifest" crossorigin="use-credentials"><title>React App</title><script defer="defer" src="/static/js/main.4f5c4373.js"></script><link href="/static/css/main.6b722068.css" rel="stylesheet"></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id="root"></div></body></html>
+<!DOCTYPE html>
+<html>
+<head>
+   <meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+   <title>Page Title</title>
+   <style>
+      /* Center the button */
+      .center {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         flex-direction: column;
+         height: 100%;
+      }
+      
+      /* Style the button container */
+      .button-container {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         margin-top: 20px;
+      }
+      
+      /* Style the button */
+      .button {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         width: 200px;
+         height: 50px;
+         margin: 0 10px;
+         border-radius: 10px;
+         background-color: #fff;
+         cursor: pointer;
+         transition: all 0.2s ease-in-out;
+      }
+      
+      /* Style the button icons */
+      .button img {
+         max-width: 100%;
+         max-height: 100%;
+      }
+      
+      /* Style the button on hover */
+      .button:hover {
+         transform: scale(1.1);
+      }
+      
+      /* Style the Click Me button */
+      #clickme {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         width: 400px;
+         height: 200px;
+         border-radius: 10px;
+         background-color: #fff;
+         cursor: pointer;
+         transition: all 0.2s ease-in-out;
+      }
+      
+      /* Style the Click Me button text */
+      #clickme span {
+         font-size: 2em;
+         font-weight: bold;
+      }
+      
+      /* Style the Click Me button on hover */
+      #clickme:hover {
+         transform: scale(1.1);
+      }
+   </style>
+</head>
+<body>
+   <h3>
+      <script type="text/javascript">
+         let toOpen = location.href.split("?")[1];
+         console.log(toOpen);
+         document.write("<h1>" + toOpen + "</h1>");
+      </script>
+   </h3>
+   <div class="center">
+      <button id="clickme" onclick="window.open(toOpen)">
+         <span>Open</span>
+      </button>
+      <div class="button-container">
+         <div class="button">
+            <a href="https://play.google.com/store/apps/details?id=com.GamesUnited.GamePotMobileAppUnity" target="_blank">
+               <img src="https://lh3.googleusercontent.com/q1k2l5CwMV31JdDXcpN4Ey7O43PxnjAuZBTmcHEwQxVuv_2wCE2gAAQMWxwNUC2FYEOnYgFPOpw6kmHJWuEGeIBLTj9CuxcOEeU8UXyzWJq4NJM3lg=s0" alt="Google Play logo">
+            </a>
+         </div>
+         <div class="button">
+            <a href="https://www.apple.com/app-store/" target="_blank">
+               <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="App Store logo">
+            </a>
+         </div>
+      </div>
+   </div>
+</body>
+</html>
